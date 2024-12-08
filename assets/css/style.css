@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.fp-logo {
+  display: flex;
+  width: 226px;
+  height: 220px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+
+p {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+}
