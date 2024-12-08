@@ -7,9 +7,16 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
+  height: 100vh;
+  background: linear-gradient(199deg, #1D1D1D 36%, #0A7761 85%);
+  /* background-color: rgba(36, 36, 36);
+  background-color: linear-gradient(199deg, rgba(10, 119, 97, 0.20) 75%); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fp-logo {
+  margin: 148px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,20 +37,31 @@ body {
 
 button {
   display: flex;
-  width: 35.5rem;
-  height: 4.8px;
-  padding: 1rem 2.4rem;
+  width: 355px;
+  padding: 10px 24px;
+  margin: auto;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+
+  border-radius: 10px;
+  border-style: none;
+  background: #14816B;
+  box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48);
+
+  color: #FFF;
+  font-size: 16px;
 }
 
-p {
+button:hover {
+  background: #1dc3a2;
+}
+
+a {
+  display: flex;
   color: #FFF;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 140%; /* 22.4px */
-  letter-spacing: -0.16px;
+  text-decoration: none;
+  justify-content: center;
+  margin: 42px 154px;
 }
 
