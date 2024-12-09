@@ -35,7 +35,7 @@ body {
   letter-spacing: 0.96px;
 }
 
-button {
+.btn {
   display: flex;
   width: 355px;
   padding: 10px 24px;
@@ -51,7 +51,7 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.btn:hover {
   background: #1dc3a2;
 }
 
