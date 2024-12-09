@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/* Variáveis */
+:root {
+  --white-color: #fff;
+  --bg-color-dark:#1D1D1D 36%;
+  --bg-color-green: #0A7761 85%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -29,7 +36,7 @@ body {
 .fp-logo p {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
-  color: #FFF;
+  color: var(--white-color);
   text-align: center;
   font-size: 32px;
   letter-spacing: 0.96px;
@@ -47,7 +54,7 @@ body {
   background: #14816B;
   box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48);
 
-  color: #FFF;
+  color: var(--white-color);
   font-size: 16px;
 }
 
@@ -57,7 +64,7 @@ body {
 
 a {
   display: flex;
-  color: #FFF;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
