@@ -7,8 +7,9 @@
 /* Variáveis */
 :root {
   --white-color: #fff;
-  --bg-color-dark:#1D1D1D 36%;
-  --bg-color-green: #0A7761 85%;
+  --bg-color-dark:#1D1D1D;
+  --green-btn: #14816B;
+  --green-hober-btn: #1dc3a2;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
   gap: 12px;
   flex-shrink: 0;
 }
-
 
 .fp-logo p {
   font-family: "Audiowide", sans-serif;
@@ -59,7 +59,7 @@ body {
 }
 
 .btn:hover {
-  background: #1dc3a2;
+  background: var(--green-hober-btn);
 }
 
 a {
