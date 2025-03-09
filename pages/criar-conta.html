@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="../assets/css/criar-conta.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="title">
+    <h1>Crie uma conta</h1>
+    <p>preencha as informações abaixo para continuar.</p>
+  </div>
+
+  <form action="pagina-inicial" name="criar-conta" method="post" class="form">
+
+    <fieldset class="nome-completo">
+      <div class="box-form-complete">
+        <legend>Nome completo</legend>
+        <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome aqui" required autofocus>
+      </div>
+    </fieldset>
+
+    <fieldset class="email">
+      <div class="box-form-complete">
+      <legend>E-mail</legend>
+      <input type="text" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="dt-nascimento">
+    <div class="box-form-complete">
+        <legend>Data de nascimento</legend>
+        <input type="date" name="dt-nascimento" id="dt-nascimento" placeholder="DD / MM / ANO" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="senha">
+    <div class="box-form-complete">
+        <legend>Senha</legend>
+        <input type="password" name="senha" id="senha" placeholder="*******" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="confirmar-senha">
+    <div class="box-form-complete">
+        <legend>Confirme sua senha</legend>
+        <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="*******" required>
+      </div>
+    </fieldset>
+
+    <p>Ao continuar, você concorda com os <br>
+      <a href=""><strong>Termos de Uso</strong></a> e a <a href=""><strong>Política de Privacidade</strong></a>.</p>
+
+    <div class="box-form-submit">
+      <button type="submit">Acessar</button>
+    </div>
+
+  </form>
+</body>
+</html>
+

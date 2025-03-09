@@ -1,0 +1,51 @@
+.fp-logo {
+  margin: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.fp-logo p {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0.96px;
+}
+
+.btn {
+  display: flex;
+  width: 355px;
+  padding: 10px 24px;
+  margin: auto;
+  justify-content: center;
+
+  border-radius: 10px;
+  border-style: none;
+  background: #14816B;
+  box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48);
+
+  color: var(--white-color);
+  font-size: 16px;
+  transition: var(--transition);
+
+}
+
+.btn:hover {
+  background: var(--green-hober-btn);
+}
+
+a {
+  display: flex;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  justify-content: center;
+  margin: 42px 154px;
+}
+

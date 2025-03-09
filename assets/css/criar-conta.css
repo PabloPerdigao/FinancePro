@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Variáveis */
+:root {
+  --grey:#6C7278;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  height: 100vh;
+  background: linear-gradient(199deg, #1D1D1D 36%, #0A7761 85%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:6rem 1.9rem 10.4rem 1.8rem;
+}
+
+/* estilo do título da página criar-conta */
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    align-self: stretch;
+
+    flex-shrink: 0;
+
+    margin-bottom: 5.6rem;
+  }
+
+  .title h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.052rem;
+
+    background: linear-gradient(90deg, #FFF 0%, #FAFAFA 45.37%, #0A7761 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title p {
+    align-self: stretch;
+
+    color: var(--grey);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.012rem;
+  }
+
+/* ------ */
+
+/* estilo do formulário da página criar-conta */
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    flex-shrink: 0;
+
+    width: 100vw;
+    min-width: 36rem;
+    max-width: 32%;
+
+    max-height: 67.2rem;
+    
+   
+
+    border-radius: 3.2rem;
+    background: rgba(36, 47, 45, 0.47);
+  }
+
+  
+  .box-form-complete {
+    display: flex;
+
+    height: 46px;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+
+    border-radius: 1rem;
+    border: 1px solid var(--Stroke, #EDF1F3);
+    background: var(--Primary-0, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+  }
+
+  .nome-completo, .email, .dt-nascimento, .senha, .confirmar-senha {
+    margin-bottom: 1.6rem;
+    border: none;
+  }
+
+  p {
+    padding: 1.6rem 5.6rem 1.6rem;
+  }
+
+  p , a {
+    color: #FEFEFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .box-form-submit {
+    display: flex;
+  
+    height: 48px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #594FEF;
+    box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
+  }
+  
