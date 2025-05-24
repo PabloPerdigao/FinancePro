@@ -4,18 +4,35 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 /* Variáveis */
 :root {
-  --grey:#6C7278;
-
+  --white-color: #fff;
+  --grey-color: #6C7278;
+  --black-color: #000;
+  --bg-color-dark:#1D1D1D;
+  --green-btn: #14816B;
+  --green-hober-btn: #1dc3a2;
+  --transition: .5s;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  height: 100vh;
+  background: linear-gradient(199deg, #1D1D1D 55%, #0A7761 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-/* estilo do título da página criar-conta */
+/* Finance Pro */
 .title h1{
   font-family: "Audiowide", sans-serif;
     font-weight: 400;
@@ -30,7 +47,7 @@
     
     flex-shrink: 0;
     
-    margin-bottom: 5.6rem;
+    margin-bottom: 4.8rem;
     
   }
   
@@ -59,13 +76,43 @@
     background: rgba(36, 47, 45, 0.47);
   }
 
+  /* titulo forms */
+
+  .form-title {
+    text-align: center;
+
+  }
+
+  .form-title legend {
+    margin: 2.8rem 0 0.8rem 0;
+
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.052rem;
+
+    background: linear-gradient(90deg, #FFF 0%, #FAFAFA 45.37%, #0A7761 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .form-title p {
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.012rem;
+    margin: 0 auto;
+  }
+
+  /* ------ */
+
   /* login social */
   .social {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 
-    margin: 2.4rem 2.4rem 3.4rem;
+    margin: 2.6rem;
 
     justify-content: center;
   }
@@ -221,7 +268,7 @@
 
   /* ------ */
 
-
+  /* botão submit */
   .btn-submit {
     color: var(--white-color);
     font-size: 1.4rem;
@@ -230,7 +277,7 @@
 
     max-height: 4.8rem;
 
-    margin: 0 2.4rem 2.4rem;
+    margin: 0 2.4rem 0;
     padding: 1rem 2.4rem;
 
     flex-shrink: 0;
@@ -243,3 +290,27 @@
 
   }
 
+  /* ------ */
+
+  .register {
+    margin: 2rem auto;
+    
+  }
+
+  .register p{
+    color: var(--grey-color);
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+  .register a {
+    color: var(--green-btn);
+    text-decoration: none;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+  }
