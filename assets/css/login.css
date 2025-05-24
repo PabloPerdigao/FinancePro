@@ -41,7 +41,7 @@
   }
 
 /* estilo do formulário da página criar-conta */
-  .form {
+  .form-login-user {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -50,127 +50,133 @@
 
     width: 100vw;
     min-width: 36rem;
-    max-width: 32%;
+    max-width: 36%;
 
     max-height: 67.2rem;
     
-   
 
     border-radius: 3.2rem;
     background: rgba(36, 47, 45, 0.47);
   }
 
+  /* login social */
   .social {
-    border: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    max-width: 35.5rem;
     gap: 1.2rem;
 
     margin: 2.4rem 2.4rem 3.4rem;
 
+    justify-content: center;
+  }
+  
+  .social button  {
+    
+    max-height: 4.8rem;
+    padding: 1.2rem 2.4rem;
+    
+    border-radius: 10px;
+    border: 1px solid #EFF0F6;
+    background: var(--white-color);
+    box-shadow: 0px -3px 6px 0px rgba(244, 245, 250, 0.60) inset;
     
   }
   
-  button  {
-    max-height: 4.8rem;
-    padding: 1.2rem 2.4rem;
-
-    justify-content: center;
-    align-self: stretch;
-
-    border-radius: 10px;
-    border: 1px solid #EFF0F6;
-    background: var(--Primary-0, #FFF);
-    box-shadow: 0px -3px 6px 0px rgba(244, 245, 250, 0.60) inset;
-  
-  }
 
   button a {
-    color: var(--Secondary-500, #1A1C1E);
-    text-align: center;
+    color: var(--black-color);
+    
 
     font-family: Inter;
     font-size: 1.4rem;
     font-style: normal;
 
     font-weight: 600;
-    line-height: 140%; /* 19.6px */
-
+    
     letter-spacing: -0.14px;
+
+    text-decoration: none;
 
   }
 
   button img {
-    
-    margin-right: 1.2rem;
-  }
-
-  button .google {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  button .apple{
-    width: 1.8rem;
-    height: 1.8rem;
-  }
-
-  button .microsoft {
-    width: 1.6rem;
-    height: 1.6rem;
+    margin: 0 1.2rem 0 0;
   }
   
-  .box-form-complete {
+ /* ------ */
+
+ /* formulario de login  */
+
+  .user-login{
     display: flex;
-
-    height: 46px;
+    flex-direction: column;
+  
+    min-width: 35vw;
     align-items: center;
-    gap: 1rem;
-    align-self: stretch;
+    
 
-    border-radius: 1rem;
+    padding: 2.4rem 2.4rem 3.4rem;
+    
+  }
+  
+  .form-input {
+    
+    align-self: stretch;
+    
+  }
+
+  .form-label {
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.24px;
+  }
+
+
+  .form-input input {
+
+    padding: 1.2rem 1.4rem;
+
+    border-radius: 10px;
     border: 1px solid var(--Stroke, #EDF1F3);
-    background: var(--Primary-0, #FFF);
+    background: var(--white-color);
     box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
   }
 
-  .login, .email, .dt-nascimento, .senha, .confirmar-senha {
-    margin-bottom: 1.6rem;
-    border: none;
+  .form-input .form-text {
+    color: var(--grey-color);
+    font-size: 1rem;
+    margin: 0.8rem 0;
   }
 
-  p {
-    padding: 1.6rem 5.6rem 1.6rem;
+  .form-control::placeholder {
+    color: rgba(26, 28, 30, 0.50);
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 
-  p , a {
-    color: #FEFEFF;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 300;
-    
-  }
 
-  a {
-    text-decoration: none;
-  }
 
-  .box-form-submit {
-    display: flex;
-  
-    height: 48px;
-    
-    justify-content: center;
-    align-items: center;
-    
+ /* ------ */
+
+  .btn-submit {
+
+    height: 4.8rem;
+    max-height: 4.8rem;
+
+    margin: 2.4rem;
+    padding: 1.2rem 2.4rem;
+
     flex-shrink: 0;
 
     border-radius: 10px;
     border: none;
+    
+    color: var(--white-color);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #594FEF;
     box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
+
   }
 
