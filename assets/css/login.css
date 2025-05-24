@@ -41,7 +41,7 @@
   }
 
 /* estilo do formulário da página criar-conta */
-  .form-login-user {
+  .login-user {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -114,8 +114,8 @@
     min-width: 35vw;
     align-items: center;
     
-
-    padding: 2.4rem 2.4rem 3.4rem;
+    padding: 1.4rem 2.4rem 2.4rem;
+    gap: 1.6rem;
     
   }
   
@@ -148,7 +148,7 @@
   .form-input .form-text {
     color: var(--grey-color);
     font-size: 1rem;
-    margin: 0.8rem 0;
+    margin: 0.4rem 0 0 0;
   }
 
   .form-control::placeholder {
@@ -157,24 +157,90 @@
     font-weight: 500;
   }
 
+  .form-checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .checkbox-label input {
+    
+    border-radius: 4px;
+    border: 1px solid var(--grey-color);
+    
+    box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+    cursor: pointer;
+  }
+  
+  .checkbox-label label {
+    color: var(--grey-color);
+
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    
+  }
+
+  .form-checkbox a {
+    color: var(--green-btn);
+    text-decoration: none;
+  }
 
  /* ------ */
 
-  .btn-submit {
+ /* divisor */
 
-    height: 4.8rem;
+  .divider {
+    display: flex;
+    width: 100%;
+    height: 1.8rem;
+    padding: 0 2.4rem;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--grey-color);
+  }
+
+  .divider span {
+    color: var(--Grey, #6C7278);
+    text-align: center;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  /* ------ */
+
+
+  .btn-submit {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+
     max-height: 4.8rem;
 
-    margin: 2.4rem;
-    padding: 1.2rem 2.4rem;
+    margin: 0 2.4rem 2.4rem;
+    padding: 1rem 2.4rem;
 
     flex-shrink: 0;
 
     border-radius: 10px;
     border: none;
     
-    color: var(--white-color);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #594FEF;
     box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
 

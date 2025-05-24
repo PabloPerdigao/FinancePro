@@ -26,62 +26,71 @@
     
   </head>
   <body>
+
     <div class="title">
       <h1>Finance Pro</h>
     </div>
-      
-    <form action="" name="login" method="post" class="form-login-user">
-        
-      <div class="log-tiltle">
-        <legend>Começe agora</legend>
-        <p>Crie uma conta ou faça login para explorar nosso app</p>
-      </div>
-        
-      <fieldset class="social">
-        
-        <button type="text" id="google" onclick="handleGoogleLogin()">
-          <img src="../assets/icons/google.svg" alt="Google Icon">
-          <a href="https://www.google.com/">Entrar com o Google</a>
-        </button>
-      
-        <button type="text" id="apple" onclick="handleAppleLogin()">
-          <img src="../assets/icons/apple.svg" alt="Apple Icon">
-          <a href="https://www.apple.com/">Entrar com a Apple </a>
-        </button>
-        
-        <button type="text" id="microsoft" onclick="handleMicrosoftLogin()">
-          <img src="../assets/icons/microsoft.svg" alt="Microsoft Icon">
-          <a href="https://www.microsoft.com/">Entrar com a Microsoft</a>
-        </button>
-        
-      </fieldset>
-      
-      <hr>
 
-      <fieldset class="user-login">
-
-        <div class="form-input mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="seumelhor@email.com"
-          placearia-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+    <main>
+      <section class="login-user">
+        
+        <div class="log-tiltle">
+          <legend>Começe agora</legend>
+          <p>Crie uma conta ou faça login para explorar nosso app</p>
         </div>
         
-        <div class="form-input mb-3">
-          <label for="exampleInputPassword1" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
-          <a href="#">Esqueceu sua senha ?</a>
-        </div>
-      </fieldset>
+        <fieldset class="social">
+          
+          <button type="text" id="google" onclick="handleGoogleLogin()">
+            <img src="../assets/icons/google.svg" alt="Google Icon">
+            <a href="https://www.google.com/">Entrar com o Google</a>
+          </button>
+          
+          <button type="text" id="apple" onclick="handleAppleLogin()">
+              <img src="../assets/icons/apple.svg" alt="Apple Icon">
+              <a href="https://www.apple.com/">Entrar com a Apple </a>
+            </button>
+            
+            <button type="text" id="microsoft" onclick="handleMicrosoftLogin()">
+              <img src="../assets/icons/microsoft.svg" alt="Microsoft Icon">
+              <a href="https://www.microsoft.com/">Entrar com a Microsoft</a>
+            </button>
+            
+          </fieldset>
+          
+          <div class="divider"><span>OU</span></div>
+          
+          <form action="" name="login" method="post">
+    
+            <fieldset class="user-login">
+      
+              <div class="form-input">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="seumelhor@email.com"
+                placearia-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+              </div>
+              
+              <div class="form-input">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
+              </div>
+              
+              <div class="form-checkbox">
+                <div class="checkbox-label">
+                  <input type="checkbox" id="exampleCheck1">
+                  <label for="exampleCheck1">Lembre-me</label>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+              </div>
+      
+            </fieldset>
+          </form>
+          
+          <button type="submit" class="btn-submit">Acessar</button>
+      </section>
+    </main>
 
-      <button type="submit" class="btn-submit">Acessar</button>
-
-
-    </form>
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
