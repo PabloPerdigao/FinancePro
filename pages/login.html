@@ -1,4 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <h1>Hello World...meu nome é Pablo Perdigão</h1>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <p>Essa é primeira a aula sobre SPA da rocketseat</>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+ <link rel="stylesheet" href="../assets/css/login.css">
+  <title>Comece agora</title>
+
+   <!-- icon -->
+  <link rel="shortcut icon" href="../assets/images/fp-short-icon.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="title">
+      <h1>Finance Pro</h>
+  </div>
+
+  <form action="login" name="login" method="post" class="form">
+    
+    <div class="log-tiltle">
+      <legend>Começe agora</legend>
+      <p>Crie uma conta ou faça login para explorar nosso app</p>
+    </div>
+
+    <fieldset class="social-login">
+      
+      <button type="text" id="google">
+        Entrar com o Google
+      </button>
+    
+      <button type="text" id="apple">
+        Entrar com a Apple 
+      </button>
+    
+      <button type="text" id="microsoft">
+        Entrar com a Microsoft
+      </button>
+     
+
+    </fieldset>
+
+    <fieldset class="email">
+      <div class="box-form-complete">
+      <legend>E-mail</legend>
+      <input type="text" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="senha">
+    <div class="box-form-complete">
+        <legend>Senha</legend>
+        <input type="password" name="senha" id="senha" placeholder="*******" required>
+      </div>
+    </fieldset>
+    
+    <label class="checkbox">
+      <input type="checkbox" name="remember" id="remember"/>
+      Lembre-me
+    </label>
+
+    <p>Ao continuar, você concorda com os <br>
+      <a href=""><strong>Termos de Uso</strong></a> e a <a href=""><strong>Política de Privacidade</strong></a>.</p>
+
+    <div class="box-form-submit">
+      <button type="submit">Acessar</button>
+    </div>
+
+  </form>
+</body>
+</html>
+
