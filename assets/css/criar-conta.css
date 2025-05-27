@@ -60,8 +60,6 @@ body {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 150%; /* 18px */
-    letter-spacing: -0.012rem;
   }
 
 /* ------ */
@@ -72,69 +70,170 @@ body {
     flex-direction: column;
     margin: 0 auto;
 
-    flex-shrink: 0;
-
     width: 100vw;
     min-width: 36rem;
-    max-width: 32%;
+    max-width: 36%;
 
     max-height: 67.2rem;
-    
-   
+  
 
     border-radius: 3.2rem;
     background: rgba(36, 47, 45, 0.47);
   }
 
+  .fieldset-wrapper {
+    border: none;
+    margin: 3.4rem 2.4rem 0 2.4rem;
+  }
   
-  .box-form-complete {
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-bottom: 1.6rem;
+
+  }
+
+
+  .input-wrapper legend, .input-wrapper-calendar legend {
+    color: var(--grey-color);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: -0.24px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .input-wrapper input, .input-container input {
     display: flex;
 
-    height: 46px;
+    max-height: 4.6rem;
     align-items: center;
-    gap: 1rem;
     align-self: stretch;
 
+    padding: 1.2rem 1.4rem;
+
+    
+    outline: none;
     border-radius: 1rem;
-    border: 1px solid var(--Stroke, #EDF1F3);
+    border: 1px solid var(--Stroke, var);
     background: var(--Primary-0, #FFF);
     box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
   }
 
-  .nome-completo, .email, .dt-nascimento, .senha, .confirmar-senha {
-    margin-bottom: 1.6rem;
-    border: none;
+  .input-wrapper input:focus {
+    border: 1px solid var(--green-btn);
+    box-shadow: 0px 1px 2px 0px var(--green-btn), 0px 0px 1.9px 1px var(--green-btn);
+    
   }
 
-  p {
-    padding: 1.6rem 5.6rem 1.6rem;
+  .input-wrapper input::placeholder {
+    overflow: hidden;
+    color: rgba(26, 28, 30, 0.50);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    
   }
+
+  /* input calendar */
+  .input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+}
+
+.calendar-icon {
+  display: flex;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  pointer-events: none; /* o clique passa para o input */
+}
+
+/* ------ */
 
   p , a {
-    color: #FEFEFF;
+    color: var(--white-color);
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 300;
-    
+    margin-top: 1.6rem;
   }
 
   a {
     text-decoration: none;
   }
 
-  .box-form-submit {
-    display: flex;
-  
-    height: 48px;
-    
-    justify-content: center;
-    align-items: center;
-    
+  /* botão submit */
+  .btn-submit {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+
+    max-height: 4.8rem;
+
+    margin: 3.2rem 2.4rem 0;
+    padding: 1rem 2.4rem;
+
     flex-shrink: 0;
 
     border-radius: 10px;
     border: none;
+    
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #594FEF;
     box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
+
+  }
+
+ /* ------ */
+
+  .register {
+    margin: 0 0 3.2rem 0;
+    
+  }
+
+  .register p{
+    color: var(--grey-color);
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+  .register a {
+    color: var(--green-btn);
+    text-decoration: none;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
   }
   

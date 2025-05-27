@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
- <link rel="stylesheet" href="../assets/css/criar-conta.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/css/criar-conta.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <title>Criar Conta</title>
 
    <!-- icon -->
@@ -18,50 +21,70 @@
     <p>preencha as informações abaixo para continuar.</p>
   </div>
 
-  <form action="pagina-inicial" name="criar-conta" method="post" class="form">
+  <form action="index.jsp" name="criar-conta" method="post" class="form">
 
-    <fieldset class="nome-completo">
-      <div class="box-form-complete">
+    <fieldset class="fieldset-wrapper">
+
+      <div class="input-wrapper">
         <legend>Nome completo</legend>
         <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome aqui" required autofocus>
       </div>
-    </fieldset>
-
-    <fieldset class="email">
-      <div class="box-form-complete">
-      <legend>E-mail</legend>
-      <input type="text" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+    
+    
+      <div class="input-wrapper">
+        <legend>E-mail</legend>
+        <input type="text" name="email" id="email" placeholder="seuemail@exemplo.com" required>
       </div>
-    </fieldset>
 
-    <fieldset class="dt-nascimento">
-    <div class="box-form-complete">
+    
+      <!-- <div class="input-wrapper">
         <legend>Data de nascimento</legend>
         <input type="date" name="dt-nascimento" id="dt-nascimento" placeholder="DD / MM / ANO" required>
-      </div>
-    </fieldset>
+      </div> -->
 
-    <fieldset class="senha">
-    <div class="box-form-complete">
+      <div class="input-wrapper-calendar">
+        <legend>Data de nascimento</legend>
+
+        <div class="input-container">
+          <input id="meu-datepicker" type="text" placeholder="dd / mm / aaaa" />
+          <img src="../assets/icons/calendario.svg" alt="Ícone de calendário" class="calendar-icon" />
+        </div>
+      </div>
+
+
+    
+    <div class="input-wrapper">
         <legend>Senha</legend>
         <input type="password" name="senha" id="senha" placeholder="*******" required>
       </div>
-    </fieldset>
+    
 
-    <fieldset class="confirmar-senha">
-    <div class="box-form-complete">
+    
+    <div class="input-wrapper">
         <legend>Confirme sua senha</legend>
         <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="*******" required>
       </div>
     </fieldset>
+    
 
     <p>Ao continuar, você concorda com os <br>
       <a href=""><strong>Termos de Uso</strong></a> e a <a href=""><strong>Política de Privacidade</strong></a>.</p>
 
-    <div class="box-form-submit">
-      <button type="submit">Acessar</button>
-    </div>
+      <button type="submit" class="btn-submit">
+        Acessar
+      </button>
 
+        <div class="register">
+          <p>Não tem uma conta? <a href="login.html">Cadastre-se</a></p>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+      flatpickr("#meu-datepicker", {
+        dateFormat: "d/m/Y"
+      });
+    </script>
   </form>
 </body>
 </html>
