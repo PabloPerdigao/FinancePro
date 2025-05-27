@@ -92,6 +92,7 @@ body {
     flex-direction: column;
     align-self: stretch;
     margin-bottom: 1.6rem;
+    
 
   }
 
@@ -130,7 +131,7 @@ body {
     
   }
 
-  .input-wrapper input::placeholder {
+  .input-wrapper input::placeholder, .input-wrapper-calendar {
     overflow: hidden;
     color: rgba(26, 28, 30, 0.50);
     text-overflow: ellipsis;
@@ -197,10 +198,12 @@ body {
     font-weight: 500;
     text-align: center;
 
+    cursor: pointer;
+
     max-height: 4.8rem;
 
     margin: 3.2rem 2.4rem 0;
-    padding: 1rem 2.4rem;
+    padding: 1.2rem 2.4rem;
 
     flex-shrink: 0;
 
@@ -210,6 +213,23 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #594FEF;
     box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
 
+  }
+
+  .btn-submit:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #4A3BFF;
+    box-shadow: 0px 1px 2px 0px rgba(37, 62, 167, 0.48), 0px 0px 1.9px 1px #413C8D;
+    transition: all .2s ease-in-out;
+    
+    transform: scale(1.02);
+    
+    cursor: pointer;
+    
+    color: var(--white-color);
+    
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    
   }
 
  /* ------ */
@@ -236,4 +256,5 @@ body {
     font-weight: 600;
     font-style: normal;
   }
-  
+
+
